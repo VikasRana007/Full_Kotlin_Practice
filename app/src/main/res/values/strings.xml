@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AllKotlinPractice</string>
+    <string name="extension_string">Hello Dev Vikas</string>
+    <string name="extension_string_value">Extension function</string>
+</resources>
