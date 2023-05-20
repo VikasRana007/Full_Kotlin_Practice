@@ -19,7 +19,7 @@ class DelegationActivity : AppCompatActivity(),
 
 
     private val obj by MyLazy {
-        println("null")                                  // This is calling property Delegation
+        println("null")                                  // This is calling custom property Delegation
         45
     }
 
