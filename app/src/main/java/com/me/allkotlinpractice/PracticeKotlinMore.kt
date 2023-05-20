@@ -15,21 +15,41 @@ class PracticeKotlinMore : AppCompatActivity() {
 
 //        println(container(5))
 
-        val iContainer =  Container(23)
+//        val iContainer =  Container(23)
 //        iContainer.setValue(23)
-        println("Value for Generic : ${iContainer.getValue()}")
+//        println("Value for Generic : ${iContainer.getValue()}")
+
+
+        val intMarks: Int = showMessage(70) // returning integer value
+        val stringMessage: String = showMessage(95) // returning string value
+        println("Your marks: $intMarks \nMessage: $stringMessage")
+
+
     }
 
-//    private fun  container(data : Int){
-//       var value by Delegates.notNull<Int>()
-//        fun getValue() : Int{
-//            return value
-//        }
-//
-//        fun setValue(){
-//            value  = data
-//        }
-//    }
+
+
+
+
+
+
+
+
+
+
+
+    // use of reified type to return different type of data with in the same function.
+    private inline fun<reified T> showMessage(marks: Int): T {
+        return when (T::class) {
+            Int::class -> marks as T
+            String::class -> "Congratulations! you scored more than 90%" as T
+            else -> "Please enter valid type" as T
+        }
+    }
+
+
+
+
 
 
     /**
