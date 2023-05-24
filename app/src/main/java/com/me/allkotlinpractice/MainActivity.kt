@@ -123,5 +123,15 @@ class MainActivity : AppCompatActivity() {
 //           In retry operator =>
 //        currentDelay: This represents the delay to be used in the current retry.
 //        delayFactor: We use this delayFactor to multiply it with the currentDelay to increase the delay for the next retry.
+
+
+//        ========================================
+//        We use many libraries in our Android Project that provides the callback way to use instead of the
+    //        Flow API way. As nowadays, we all have started using Kotlin Coroutines Flow API in our projects, so it becomes our responsibility to implement things in a way that supports Flow API.
+
+//        So, we need to learn how to convert any Callback to Flow API in Kotlin using callbackFlow
+
+
+
     }
 }
